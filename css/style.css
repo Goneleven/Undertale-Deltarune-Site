@@ -36,8 +36,7 @@
         color: black;
     }
 
-    .navAncora,
-    .navPrincipal,
+    .nav-principal,
     .container,
     .container3 {
         background-color: rgb(245, 179, 179);
@@ -62,15 +61,15 @@ header {
 
 }
 
-.navPrincipal,
-.navAncora {
+.nav-principal {
     position: fixed;
     top: 0;
-    right: 0;
     z-index: 1;
+    float: right;
+    right: 0;
 
     background-color: white;
-    width: 275px;
+    width: auto;
     height: 60px;
     border-radius: 0px 0px 15px 15px;
     text-align: center;
@@ -82,14 +81,6 @@ header {
 
 }
 
-.navPrincipal {
-    float: right;
-}
-
-.navAncora {
-    float: left;
-}
-
 .nav-links {
     display: flex;
     list-style: none;
@@ -98,6 +89,53 @@ header {
 .nav-links li {
     letter-spacing: 3px;
     padding: 10px;
+}
+
+@media(max-width:600px) {
+
+    /* Parte do header: */
+    .nav-principal {
+        width: max-content;
+        height: max-content;
+
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-principal li {
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+    }
+
+
+    .container4 {
+        max-height: 100px;
+    }
+
+}
+
+.undertale-page-link,
+.deltarune-page-link:hover {
+    transition: all 0.5s;
+    filter: drop-shadow(0px 0px 0.5px);
+}
+
+.undertale-page-link:hover {
+    color: #FF0000;
+}
+
+.deltarune-page-link:hover {
+    color: #4300FF;
+}
+
+.nav-links a {
+    font-family: "Jersey 10", sans-serif, system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: black;
 }
 
 
@@ -173,7 +211,7 @@ main {
     justify-content: center;
     color: white;
     margin-top: 0px;
-
+    overflow: hidden
 }
 
 .container-especial {
@@ -213,12 +251,18 @@ main {
 
 .container4 {
     background-image: url(../_imagens/undertaleWallpaper.gif);
-    overflow: hidden
 }
 
 .container4 img {
-    width: 35%;
+    width: 40%;
     max-height: 450px;
+
+}
+
+.container4 img:hover {
+    width: 70%;
+    transition: all ease 0.9s;
+    cursor: pointer;
 
 }
 
@@ -228,13 +272,6 @@ main {
 
 .container6 {
     background-image: url(../_imagens/zbannerTechno2.jpg);
-}
-
-.container4 img:hover {
-    width: 70%;
-    transition: all ease 0.9s;
-    cursor: pointer;
-
 }
 
 .card-sites {
@@ -315,6 +352,7 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    max-width: 500px;
 }
 
 .plataforma-jogo-icone li {
@@ -335,9 +373,9 @@ p {
 
 }
 
-.plataforma-jogo-icone .icone-nintendo:hover {
+/* .plataforma-jogo-icone .icone-nintendo:hover {
     filter: drop-shadow(0px 0px 30px #e4000f);
-}
+} */
 
 figure {
     text-align: center;
