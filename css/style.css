@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Tiny5&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
 
 /* Padrão Site todo */
 
@@ -8,14 +9,15 @@
     padding: 0;
     margin: auto;
     position: relative;
-    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui;
     transition: all 0.50s ease-in-out;
+    overflow-x: hidden;
 }
 
 /* Dark e Light Mode em BODY: */
 .dark {
     /* background-color: #121212; */
-    background: linear-gradient(to top, black, #121212);
+    background: linear-gradient(to top, black 70%, #121212);
     /* background-image: url(../_imagens/undertaleWallpaper2.png);
     background-repeat: no-repeat;
     background-position-x: center;
@@ -56,6 +58,7 @@ header {
     width: auto;
     border-radius: 0px 0px 15px 15px;
     text-align: center;
+    position: absolute;
 
 }
 
@@ -65,7 +68,7 @@ header {
     top: 0;
     right: 0;
     z-index: 1;
-    
+
     background-color: white;
     width: 275px;
     height: 60px;
@@ -109,7 +112,7 @@ header {
 /* .mobile-menu{
     cursor: pointer;
 }
-
+ 
 .mobile-menu div{
     width: 32x;
     height: 2px;
@@ -162,14 +165,14 @@ main {
 .container4,
 .container5,
 .container6 {
-    background-color: #202020;
+    background-color: black;
     border: 2px solid white;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    margin-top: 3px;
+    margin-top: 0px;
 
 }
 
@@ -204,11 +207,13 @@ main {
     background-image: url(../_imagens/undertaleWallpaper3.gif);
     background-position: center;
     background-color: black;
-    background-size: 30%
+    background-size: 28%;
+    border: 0px solid white;
 }
 
 .container4 {
     background-image: url(../_imagens/undertaleWallpaper.gif);
+    overflow: hidden
 }
 
 .container4 img {
@@ -229,17 +234,20 @@ main {
     width: 70%;
     transition: all ease 0.9s;
     cursor: pointer;
+
 }
 
 .card-sites {
     text-align: center;
     position: absolute;
+
 }
 
 
 .object {
     max-width: 850px;
     text-align: justify;
+    align-items: center;
 
 }
 
@@ -251,7 +259,7 @@ main {
 
 .object-especial h2,
 p {
-    font-family: "Jersey 10", sans-serif;
+    font-family: "Jersey 10", sans-serif, system-ui;
     font-weight: 400;
     font-size: 32px;
     font-style: normal;
@@ -262,27 +270,78 @@ p {
     max-width: 600px;
 }
 
-/* .object-character img{
-    width: 15%;
-} */
-
+/* grid contendo coisas importantes? */
 
 .grid {
     display: grid;
     /* background-color: white; */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
     grid-gap: 15px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.grid div {
+.grid,
+.grid2 div {
     text-align: center;
     justify-content: center;
 }
 
+.undertale-intro-img img {
+    /* ARRUMAR O TAMANHO DISSO GUILHERME DO FUTURO */
+    /* ARRUMAR O TAMANHO DISSO GUILHERME DO FUTURO */
+    width: 397px;
+    height: 213px;
+}
+
+.undertale-game-img img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.grid2 {
+    display: grid;
+    /* background-color: white; */
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-gap: 150px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+
+}
+
+.plataforma-jogo-icone {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.plataforma-jogo-icone li {
+    flex-basis: 200;
+}
+
+.plataforma-jogo-icone img {
+    width: 50px;
+    height: 50px;
+}
+
+.plataforma-jogo-icone .icone-nintendo,
+.icone-playstation,
+.icone-xbox,
+.icone-steam:hover {
+    transition: all ease 0.5s;
+    cursor: pointer;
+
+}
+
+.plataforma-jogo-icone .icone-nintendo:hover {
+    filter: drop-shadow(0px 0px 30px #e4000f);
+}
+
 figure {
     text-align: center;
+    /* border: 1px solid white; */
 }
 
 /* Imagens no fundo das escritas */
@@ -347,6 +406,14 @@ h1 {
 h2,
 h3 {
     color: white;
+}
+
+figcaption {
+    color: white;
+    font-family: "Jersey 10", sans-serif, system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
 }
 
 a {
