@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indie Bunny - Undertale</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="_imagens/UndertaleIcon.png">
+    <link rel="shortcut icon" href="_imagens/_siteIcone.png">
 </head>
 
 <body class="dark">
@@ -17,28 +17,23 @@
 
         <!-- LINKS DA PAGINA: -->
 
-        <nav class="nav-principal">
-            <ul class="nav-links">
-                <li><a href="index.html" class="undertale-page-link">UNDERTALE</a></li>
-                <li><a href="index.html" class="deltarune-page-link">DELTARUNE</a></li>
-                <li><a href="#" class="undertale-page-link">Inicio</a></li>
-                <li><a href="#" class="deltarune-page-link">Screenshots</a></li>
-                <li><a href="#" class="deltarune-page-link">Plataformas</a></li>
+        <nav>
+            <div class="nav-principal">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="undertale-page-link">UNDERTALE</a></li>
+                    <li><a href="deltarune.html" class="deltarune-page-link">DELTARUNE</a></li>
+                    <li><a href="#inicio-undertale" class="ancora-page-link">Inicio</a></li>
+                    <li><a href="#screenshots-undertale" class="ancora-page-link">Screenshots</a></li>
+                    <li><a href="#plataformas" class="ancora-page-link">Plataformas</a></li>
 
-            </ul>
+                </ul>
+            </div>
+            <div class="botao-modo">
+                <div class="selecao"></div>
 
+            </div>
         </nav>
 
-        <!-- <button onclick="Temas()">Dark / Light</button>
- 
-        <button onclick="Nota()">Dê uma nota!</button> -->
-
-        <!-- LINKS DE ANCORA: -->
-
-        <!-- <nav class="navAncora">
-            <a href="#sobre">Sobre</a> |
-            <a href="#infos">Franquia</a>
-        </nav> -->
     </header>
 
 
@@ -47,24 +42,9 @@
     <!-- CONSTRUÇÃO DO MAIN -->
 
 
-    <main>
-
-        <!-- Fusão da "Titulo" -->
-        <!-- <div class="titulo">
-            <img class="logo1" src="_imagens/sackboyRender3.png" alt="">
-            <h1>
-                MEDIA MOLECULE
-            </h1>
-            <img class="logo2" src="_imagens/krisSprite1.gif" alt="">
- 
-        </div> -->
-
-
+    <main id="inicio-undertale">
+        <!-- INTRODUÇÃO, Section para LINK e Fundo logo UNDERTALE -->
         <br><br>
-
-        <!-- INTRODUÇÃO -->
-
-        <!-- Section para LINK e Fundo UNDERTALE -->
         <section class="container4">
             <!-- Container com IMAGEM -->
             <figure class="card-sites">
@@ -121,21 +101,28 @@
                 </div>
 
                 <br>
-                <!-- arrumar com p -->
+
                 <div class="texto-main">
-                    <h2>Nesse RPG você não precisa matar ninguem.</h2>
+                    <!-- São varios "p" Propositalmente -->
+                    <p>Nesse RPG você não precisa matar ninguem.</p>
+
                     <br>
-                    <h2>Cada inimigo pode ser "derrotado" sem violência.</h2>
+
+                    <p>Cada inimigo pode ser "derrotado" sem violência.</p>
+
                     <br>
-                    <h2>Dance com um slime. Acaricie um cachorro. Sussure seu segredo favorito para um cavaleiro.</h2>
+
+                    <p>Dance com um slime. Acaricie um cachorro. Sussure seu segredo favorito para um cavaleiro.</p>
+
                     <br>
-                    <h2>Ou, ignore essa escolha e faça chover destruição sobre seus inimigos.</h2>
+
+                    <p>Ou, ignore essa escolha e faça chover destruição sobre seus inimigos.</p>
                 </div>
 
             </div>
         </section>
 
-        <section class="container2">
+        <section class="container2" id="screenshots-undertale">
             <!-- Container com IMAGEM -->
         </section>
 
@@ -144,7 +131,7 @@
                 <div class="texto-main">
                     <h2>Mas sua jornada vai precisar de DETERMINAÇÃO.</h2>
                     <br>
-                    <h2>Cada adversário tem seu padrão de ataque único que você deve desviar.</h2>
+                    <p>Cada adversário tem seu padrão de ataque único que você deve desviar.</p>
                 </div>
 
                 <br>
@@ -166,9 +153,9 @@
                 <br>
 
                 <div class="texto-main">
-                    <h2>Ênfase no humor, no diálogo dos personagens e na escolha do jogador.</h2>
+                    <p>Ênfase no humor, no diálogo dos personagens e na escolha do jogador.</p>
                     <br>
-                    <h2>Tempo médio de jogo: 6 Horas.</h2>
+                    <p>Tempo médio de jogo: 6 Horas.</p>
 
                 </div>
 
@@ -192,15 +179,15 @@
                 <br><br><br>
 
                 <div class="texto-main">
-                    <h2>Muitas pessoas amam esse jogo.</h2>
+                    <p>Muitas pessoas amam esse jogo.</p>
                     <br>
-                    <h2>Quem sabe você não ame também.</h2>
+                    <p>Quem sabe você não ame também.</p>
 
                 </div>
 
                 <br><br>
 
-                <div class="undertale-game-fim">
+                <div class="undertale-game-fim" id="plataformas">
                     <figure>
                         <img src="_imagens/characterTobyFox.gif" alt="">
                         <figcaption>Jogo Feito por TobyFox</figcaption>
@@ -282,8 +269,9 @@
 
             <p>
                 Guilherme da Silva Bonifácio <br>
-                UNDERTALE Feito por TobyFox
+                UNDERTALE | DELTARUNE Feito por TobyFox
             </p>
+
         </div>
 
     </footer>

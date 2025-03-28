@@ -15,32 +15,77 @@
 }
 
 /* Dark e Light Mode em BODY: */
-.dark {
-    /* background-color: #121212; */
-    background: linear-gradient(to top, black 70%, #121212);
-    /* background-image: url(../_imagens/undertaleWallpaper2.png);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-color: black; */
+body {
+    background-color: black;
+    /* background: linear-gradient(to top, black 85%, #121212); */
 
+}
+
+/* Configuração do Menuzinho do botão para troca do modo */
+
+.botao-modo {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 #36a2db59;
+    cursor: pointer;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    float: left;
+    left: 0;
+}
+
+.selecao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../_imagens/modoSol.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    transition: left 1s;
+
+}
+
+.selecao-move {
+    background-image: url(../_imagens/modoLua.png);
+    background-color: black;
 }
 
 .light {
     background-color: rgb(245, 209, 179);
 
+
     p,
     h1,
     h2,
     h3,
-    li {
+    li,
+    figcaption {
         color: black;
     }
 
-    .nav-principal,
-    .container,
-    .container3 {
+    .texto-main h2 {
+        color: black;
+    }
+
+    .nav-principal {
         background-color: rgb(245, 179, 179);
         box-shadow: 0px 0px 0px 0px;
+        border: solid 1px  black;
+    }
+
+    .footer h2,
+    .footer p {
+        color: white;
     }
 }
 
@@ -68,7 +113,8 @@ header {
     float: right;
     right: 0;
 
-    background-color: white;
+    background: linear-gradient(to right, #E2DFD2, #C0BFBD);
+    /* border: solid 1px black; */
     width: auto;
     height: 60px;
     border-radius: 0px 0px 15px 15px;
@@ -91,7 +137,7 @@ header {
     padding: 10px;
 }
 
-@media(max-width:600px) {
+@media(max-width:639px) {
 
     /* Parte do header: */
     .nav-principal {
@@ -117,7 +163,8 @@ header {
 }
 
 .undertale-page-link,
-.deltarune-page-link:hover {
+.deltarune-page-link,
+.ancora-page-link:hover {
     transition: all 0.5s;
     filter: drop-shadow(0px 0px 0.5px);
 }
@@ -128,6 +175,10 @@ header {
 
 .deltarune-page-link:hover {
     color: #4300FF;
+}
+
+.ancora-page-link:hover {
+    color: black;
 }
 
 .nav-links a {
@@ -205,6 +256,7 @@ main {
 .container6 {
     background-color: black;
     border: 2px solid white;
+    border-style: dotted;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -267,11 +319,12 @@ main {
 }
 
 .container5 {
-    background-image: url(../_imagens/zbannerTechno.png);
-}
+    background-image: url(../_imagens/deltaruneWallpaper3.jpg);
+    background-position: top;
+    background-color: black;
+    background-size: 345px;
+    border: 0px solid white;
 
-.container6 {
-    background-image: url(../_imagens/zbannerTechno2.jpg);
 }
 
 .card-sites {
@@ -324,17 +377,21 @@ p {
     justify-content: center;
 }
 
+.grid img, .grid2 img{
+    border-radius: 10px;
+}
+
 .undertale-intro-img img {
     /* ARRUMAR O TAMANHO DISSO GUILHERME DO FUTURO */
     /* ARRUMAR O TAMANHO DISSO GUILHERME DO FUTURO */
-    width: 397px;
-    height: 213px;
+    width: 100%;
+    height: 100%;
 }
 
 .undertale-game-img img {
-    width: 100%;
+    width: 99%;
     height: 100%;
-
+    /* border: 1px solid white; */
 }
 
 .grid2 {
@@ -373,15 +430,6 @@ p {
 
 }
 
-/* .plataforma-jogo-icone .icone-nintendo:hover {
-    filter: drop-shadow(0px 0px 30px #e4000f);
-} */
-
-figure {
-    text-align: center;
-    /* border: 1px solid white; */
-}
-
 /* Imagens no fundo das escritas */
 
 .figuraFundo,
@@ -413,8 +461,8 @@ figure {
 /* Personalização do FOOTER: */
 
 .footer {
-    background-color: black;
     color: white;
+    background-color: #121212;
     height: 150px;
     text-align: center;
 }
@@ -441,10 +489,7 @@ h1 {
     text-align: center;
 }
 
-h2,
-h3 {
-    color: white;
-}
+
 
 figcaption {
     color: white;
@@ -469,4 +514,9 @@ button {
     width: 100px;
     height: 25px;
     cursor: pointer;
+}
+
+figure {
+    text-align: center;
+    /* border: 1px solid white; */
 }
